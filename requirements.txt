@@ -1,4 +1,4 @@
 Flask==2.3.2
-guesslang==2.2.1
-
+guesslang==0.13.0
+tensorflow==2.3.0
 
