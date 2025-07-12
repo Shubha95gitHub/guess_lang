@@ -30,7 +30,6 @@ class CodeCheckingToolViewController: UIViewController {
                 }
                 return
             }
-
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -53,6 +52,36 @@ class CodeCheckingToolViewController: UIViewController {
                 }
             }.resume()
         }
+    
+    func detectLanguageViaAPIs(code: String, completion: @escaping (String?) -> Void) {
+        guard let url = URL(string: "https://guesslang-api.fly.dev/guess") else {
+            DispatchQueue.main.async {
+                completion(nil)
+            }
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let payload: [String: Any] = ["code": code]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: payload)
+
+        URLSession.shared.dataTask(with: request) { data, _, _ in
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                  let detectedLanguage = json["language"] as? String else {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+                return
+            }
+
+            DispatchQueue.main.async {
+                completion(detectedLanguage)
+            }
+        }.resume()
+    }
     
     // MARK: - Step 2: Fetch Judge0 Languages
         func fetchJudge0Languages(completion: @escaping ([String: Int]) -> Void) {
