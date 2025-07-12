@@ -65,6 +65,7 @@
 		04CA544E2CDC8F0D0015DAA6 = {
 			isa = PBXGroup;
 			children = (
+				04B38FCC2E226951004C88A8 /* requirements.txt */,
 				04CA54592CDC8F0D0015DAA6 /* TableVwCellExpandCollapse */,
 				04CA54582CDC8F0D0015DAA6 /* Products */,
 				5B5DD5899D98F7BE6B7614A1 /* Pods */,
@@ -83,7 +84,6 @@
 		04CA54592CDC8F0D0015DAA6 /* TableVwCellExpandCollapse */ = {
 			isa = PBXGroup;
 			children = (
-				04B38FCC2E226951004C88A8 /* requirements.txt */,
 				04CA545A2CDC8F0D0015DAA6 /* AppDelegate.swift */,
 				04CA545C2CDC8F0D0015DAA6 /* SceneDelegate.swift */,
 				04CA545E2CDC8F0D0015DAA6 /* ViewController.swift */,
