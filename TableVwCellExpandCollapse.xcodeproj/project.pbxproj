@@ -10,6 +10,7 @@
 		045378762CDCACCF00422A42 /* TVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045378752CDCACCF00422A42 /* TVCell.swift */; };
 		04B38FCB2E2244A0004C88A8 /* CodeCheckingToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B38FCA2E2244A0004C88A8 /* CodeCheckingToolViewController.swift */; };
 		04B38FCD2E226951004C88A8 /* requirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B38FCC2E226951004C88A8 /* requirements.txt */; };
+		04B38FCF2E226C6B004C88A8 /* runtime.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B38FCE2E226C6B004C88A8 /* runtime.txt */; };
 		04C711832CE330E5000AF9DE /* CodingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C711822CE330E5000AF9DE /* CodingTestViewController.swift */; };
 		04C711852CE340BB000AF9DE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C711842CE340BB000AF9DE /* SecondViewController.swift */; };
 		04C711872CE340CA000AF9DE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C711862CE340CA000AF9DE /* ThirdViewController.swift */; };
@@ -30,6 +31,7 @@
 		045378752CDCACCF00422A42 /* TVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCell.swift; sourceTree = "<group>"; };
 		04B38FCA2E2244A0004C88A8 /* CodeCheckingToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCheckingToolViewController.swift; sourceTree = "<group>"; };
 		04B38FCC2E226951004C88A8 /* requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = requirements.txt; sourceTree = "<group>"; };
+		04B38FCE2E226C6B004C88A8 /* runtime.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = runtime.txt; sourceTree = "<group>"; };
 		04C711822CE330E5000AF9DE /* CodingTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingTestViewController.swift; sourceTree = "<group>"; };
 		04C711842CE340BB000AF9DE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		04C711862CE340CA000AF9DE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				04B38FCC2E226951004C88A8 /* requirements.txt */,
+				04B38FCE2E226C6B004C88A8 /* runtime.txt */,
 				04CA54592CDC8F0D0015DAA6 /* TableVwCellExpandCollapse */,
 				04CA54582CDC8F0D0015DAA6 /* Products */,
 				5B5DD5899D98F7BE6B7614A1 /* Pods */,
@@ -185,6 +188,7 @@
 				04CA54672CDC8F0F0015DAA6 /* Base in Resources */,
 				04B38FCD2E226951004C88A8 /* requirements.txt in Resources */,
 				04CA54622CDC8F0D0015DAA6 /* Base in Resources */,
+				04B38FCF2E226C6B004C88A8 /* runtime.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
